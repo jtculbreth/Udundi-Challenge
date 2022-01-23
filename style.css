@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+body{
+    background-color:rgba(0,0,0,0);
+}
+
+.container{
+    max-width:none;
+    background-color:rgba(0,0,0,0);
+}
+
+.panel{
+    background-color:#611818;
+    z-index:-1;
+}
+
+.header_box{
+    position:absolute;
+    padding-top:40vh;
+    padding-bottom:-40vh;
+    width:100%;
+}
+.header_spacer{
+    width:calc(25% - 230px);
+    height:10px;
+    margin:0;
+    float:left;
+}
+.headerText{
+    font-size:12em;
+    position:relative;
+    font-family:'DM Serif Display';
+    color:white;
+    float:left;
+    width:90%;
+}
+
+.sub_header_box{
+    float:right;
+    width: calc(75% + 230px);
+    
+}
+
+.plus:hover{
+    cursor:pointer;
+}
+
+.plus{
+    height:30px;
+    width:30px;
+    display:inline-block;
+    margin-bottom:5px;
+    z-index:100;
+}
+
+.sub_header_box h6{
+    display:inline-block;
+    padding-left:10px;
+    margin-bottom:-15px;
+    color:white;
+    font-size:1.5em;
+    
+}
+
+.main{
+    height:100vh;
+}
+
+.image{
+    background-image:url('imgs/Coding-Challenge-Image.png');
+    background-size:cover;
+    background-position:bottom;
+    z-index:-2;
+}
+
+.icons{
+    width:100%;
+    margin-left:auto;
+    text-align:right;
+    margin-top:80vh
+}
+
+.icons img{
+    float:right;
+    margin-left:100%;
+    display:block;
+    margin-bottom:15px;
+    height:60px;
+    width:60px;
+}
+
+.blurb_default{
+    height:0px;
+    width:0px;
+    position:absolute;
+    display:none;
+}
+.blurb{
+    height:75vh;
+    width:500px;
+    background-color:rgba(0,0,0,0);
+    margin:auto;
+    padding:50px;
+    opacity:0;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.blurb-wrapper{
+    height:100vh;
+    width:calc(100% - 230px);
+    background-color:rgba(0,0,0,0);
+    position:absolute;
+    padding-top:12.5vh;
+    z-index:-3;
+    
+}
+
+/* .blurb-frame{
+    height:75vh;
+    width:500px;
+    background-color:white;
+    margin:auto;
+    display:none;
+}*/
+
+.blurb-frame{
+    
+    height:0px;
+    width:0px;
+    border-radius:20px;
+    background-color:white;
+    opacity:0;
+    margin:auto;
+    margin-left:140px;
+    box-shadow: 0px 0px 20px #030303;
+}
+
+.blurb_header{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-family:'DM Serif Display';
+    color: #611818;
+}
+
+.blurb h2{
+    font-size:4em;
+}
+
+.blurb .underline{
+    height:5px;
+    margin:auto;
+    width:395px;
+    padding-left:15px;
+    padding-right:15px;
+    background:linear-gradient(to right,#611818, white );
+}
+
+.para{
+    margin-top:20px;
+    line-height:2em;
+}
+
+.blurb_button{
+    height:50px;
+    width:200px;
+    background:linear-gradient(to right, #611818, #ac8d8d );
+    color:white;
+    border:none;
+}
+
+#e, #x, #p, #l, #o, #r, #e2{
+    display: inline; 
+    margin:0px;
+    padding:0px;
+}
+
+.bi, .bi-x{
+    float:right;
+    margin-top:-25px;
+    margin-right:-25px;
+}
+
+.bi-x:hover{
+    cursor:pointer;
+}
+
+
+
+@media screen and (max-width:767px){
+    .header_box{
+
+        padding-top:4vh;
+
+    }
+    .headerText{
+        margin:auto;
+        width:100vw;
+        text-align:center;
+        font-size:7em;
+        font-family:'DM Serif Display';
+        color:white;
+    }
+    .panel{
+        height:33vh;
+    }
+    .sub_header_box{
+        width: 90%;
+        float:left;
+
+        text-align:left;
+        
+    }
+    .header_spacer{
+        width:10vw;
+
+    }
+    .blurb-frame{
+        margin-left:0px;
+    }
+}
+
+
+
+
+
